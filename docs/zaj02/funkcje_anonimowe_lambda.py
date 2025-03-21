@@ -1,4 +1,4 @@
-#lista ksiazek
+# lista ksiazek
 ksiazki = [
     {"tytul": "Władca Pierścieni", "autor": "J.R.R. Tolkien", "rok_wydania": 1954},
     {"tytul": "Harry Potter i Kamień Filozoficzny", "autor": "J.K. Rowling", "rok_wydania": 1997},
@@ -12,21 +12,21 @@ ksiazki = [
     {"tytul": "Solaris", "autor": "Stanisław Lem", "rok_wydania": 1961},
 ]
 
-#sortowanie wedlug roku wynania (rosnaco)
+# sortowanie wedlug roku wynania (rosnaco)
 ksiazki_posortowane = sorted(ksiazki, key=lambda ksiazka: ksiazka["rok_wydania"])
 
 print("\nKsiążki posortowane według roku wydania:")
 for ksiazka in ksiazki_posortowane:
     print(f"{ksiazka['rok_wydania']}: {ksiazka['tytul']}")
 
-#filtracja wydanych po 1950 (filtracja po 2000 bez sensu bo nie ma takich ksiazek)
+# filtracja wydanych po 1950 (filtracja po 2000 bez sensu bo nie ma takich ksiazek)
 ksiazki_po_2000 = list(filter(lambda ksiazka: ksiazka["rok_wydania"] > 1950, ksiazki))
 
 print("\nKsiążki wydane po 2000 roku:")
 for ksiazka in ksiazki_po_2000:
     print(f"{ksiazka['rok_wydania']}: {ksiazka['tytul']}")
 
-#Transformacja listy do listy tytułów
+# Transformacja listy do listy tytułów
 lista_tytulow = list(map(lambda ksiazka: ksiazka["tytul"], ksiazki))
 
 print("\nLista tytulow:")
