@@ -5,8 +5,8 @@ def stworz_raport(*args, **kwargs):
         nazwa_key = f"nazwa_{product_id}"
         cena_key = f"cena_{product_id}"  
         
-        nazwa = kwargs.get(nazwa_key, "Nieznana nazwa")  #pobieramy nazwe i cene, obie domyslnie nieznane
-        cena = kwargs.get(cena_key, "Nieznana cena") 
+        nazwa = kwargs.get( nazwa_key, "Nieznana nazwa" )  #pobieramy nazwe i cene, obie domyslnie nieznane
+        cena = kwargs.get( cena_key, "Nieznana cena" ) 
 
         print(f"Produkt ID: {product_id}")
         print(f"Nazwa: {nazwa}")

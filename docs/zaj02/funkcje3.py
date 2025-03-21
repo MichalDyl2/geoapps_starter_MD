@@ -4,7 +4,7 @@ def zamowienie_produktu(nazwa_produktu, *, cena, ilosc=1):
     tekst = f"Zamówienie: {nazwa_produktu}, Ilość: {ilosc}, Łączna cena: {wartosc:.2f} zł"
     return tekst, wartosc  #zwracamy zmienne zeby sobie zobaczyc
 
-#lista pusta
+#lista pusta  
 zamowienia = []
 
 #trzy zamowienia
@@ -18,5 +18,5 @@ for tekst, wartosc in zamowienia:
     print(tekst)
 
 #Calkowity koszt
-suma_zamowien = sum(wartosc for _, wartosc in zamowienia)
+suma_zamowien = sum( wartosc for _, wartosc in zamowienia )
 print(f"\nŁączna wartość zamówień: {suma_zamowien:.2f} zł")
