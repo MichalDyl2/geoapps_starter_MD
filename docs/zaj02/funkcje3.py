@@ -1,6 +1,5 @@
 #funkcja
 def zamowienie_produktu(nazwa_produktu, *, cena, ilosc=1):
-    """Funkcja zwracająca podsumowanie zamówienia"""
     wartosc = cena * ilosc
     tekst = f"Zamówienie: {nazwa_produktu}, Ilość: {ilosc}, Łączna cena: {wartosc:.2f} zł"
     return tekst, wartosc  #zwracamy zmienne zeby sobie zobaczyc

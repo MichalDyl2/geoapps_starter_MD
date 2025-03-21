@@ -1,22 +1,21 @@
 def zmien_wartosc(arg):
-    """Modyfikuje argument w zależności od jego typu"""
-    if isinstance(arg, list):  #Jeśli jest listą
+    if isinstance(arg, list): #jesli lista
         print(f"Przed zmianą (lista): {arg}")
         arg[0] = 'kalafior'
         print(f"Po zmianie (lista): {arg}")
-    elif isinstance(arg, int):  #Jeśli jest liczbą całkowitą
+    elif isinstance(arg, int):  #jesli liczba calkowita
         print(f"Przed zmianą (int): {arg}")
         arg = 65482652
         print(f"Po zmianie (int): {arg} (tylko wewnątrz funkcji!)")
     else:
         print("Nieobsługiwany typ danych!")
 
-#Test dla listy - mutowalny typ
+#test lista
 moja_lista = [1, 2, 3]
-zmien_wartosc(moja_lista)  #Modyfikuje oryginalną listę
-print(f"Po wywołaniu funkcji (lista): {moja_lista}\n")  #Zmiana widoczna na zewnątrz
+zmien_wartosc(moja_lista)  
+print(f"Po wywołaniu funkcji (lista): {moja_lista}\n")  
 
-#Test dla liczby - niemutowalny typ
+#test liczby
 moja_liczba = 42
-zmien_wartosc(moja_liczba)  #Nie zmienia oryginalnej liczby
-print(f"Po wywołaniu funkcji (int): {moja_liczba}")  #Oryginalna liczba się NIE zmienia
+zmien_wartosc(moja_liczba)
+print(f"Po wywolaniu funkcji (liczba): {moja_liczba}\n")
