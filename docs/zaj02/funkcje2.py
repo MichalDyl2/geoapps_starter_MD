@@ -15,7 +15,7 @@ moja_lista = [1, 2, 3]
 zmien_wartosc(moja_lista)  
 print(f"Po wywołaniu funkcji (lista): {moja_lista}\n")  
 
-#test liczby
+#test liczby  
 moja_liczba = 42
 zmien_wartosc(moja_liczba)
 print(f"Po wywolaniu funkcji (liczba): {moja_liczba}\n")

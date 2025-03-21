@@ -3,7 +3,7 @@ def stworz_raport(*args, **kwargs):
 
     for product_id in args:  #ITERACJA po ID
         nazwa_key = f"nazwa_{product_id}"
-        cena_key = f"cena_{product_id}"
+        cena_key = f"cena_{product_id}"  
         
         nazwa = kwargs.get(nazwa_key, "Nieznana nazwa")  #pobieramy nazwe i cene, obie domyslnie nieznane
         cena = kwargs.get(cena_key, "Nieznana cena") 
